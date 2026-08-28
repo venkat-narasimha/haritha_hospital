@@ -1,8 +1,8 @@
 app_name = "haritha_hospital"
-app_title = "Haritha Hospitals"
-app_publisher = "Processbricks"
-app_description = "Haritha Hospitals customizations - fixtures for env replication"
-app_email = "processbricks@example.com"
+app_title = "Haritha Hospital"
+app_publisher = "Venkat Narasimha"
+app_description = "Haritha Hospital Management"
+app_email = "srivenkatnarasimha@gmail.com"
 app_license = "mit"
 
 # Apps
@@ -15,7 +15,7 @@ app_license = "mit"
 # 	{
 # 		"name": "haritha_hospital",
 # 		"logo": "/assets/haritha_hospital/logo.png",
-# 		"title": "Haritha Hospitals",
+# 		"title": "Haritha Hospital",
 # 		"route": "/haritha_hospital",
 # 		"has_permission": "haritha_hospital.api.permission.has_app_permission"
 # 	}

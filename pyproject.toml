@@ -1,9 +1,9 @@
 [project]
 name = "haritha_hospital"
 authors = [
-    { name = "Processbricks", email = "processbricks@example.com"}
+    { name = "Venkat Narasimha", email = "srivenkatnarasimha@gmail.com"}
 ]
-description = "Haritha Hospitals customizations - fixtures for env replication"
+description = "Haritha Hospital Management"
 requires-python = ">=3.14"
 readme = "README.md"
 dynamic = ["version"]
