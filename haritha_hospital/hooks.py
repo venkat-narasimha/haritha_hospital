@@ -44,9 +44,9 @@ app_license = "mit"
 
 # include js in doctype views
 # doctype_js = {"doctype" : "public/js/doctype.js"}
-# doctype_list_js = {"doctype" : "public/js/doctype_list.js"}
-# doctype_tree_js = {"doctype" : "public/js/doctype_tree.js"}
-# doctype_calendar_js = {"doctype" : "public/js/doctype_calendar.js"}
+# doctype_list_js = {"doctype": "public/js/doctype_list.js"}
+# doctype_tree_js = {"doctype": "public/js/doctype_tree.js"}
+# doctype_calendar_js = {"doctype": "public/js/doctype_calendar.js"}
 
 # Svg Icons
 # ------------------
@@ -105,7 +105,7 @@ app_license = "mit"
 # Integration Cleanup
 # -------------------
 # To clean up dependencies/integrations with other apps
-# Name of the app being uninstalled is passed as an argument
+# To clean up when the app being uninstalled is passed as an argument
 
 # before_app_uninstall = "haritha_hospital.utils.before_app_uninstall"
 # after_app_uninstall = "haritha_hospital.utils.after_app_uninstall"
@@ -131,7 +131,7 @@ app_license = "mit"
 # }
 #
 # has_permission = {
-# 	"Event": "frappe.desk.doctype.event.event.has_permission",
+# 	"Event": "frappe.desk.doctype.event.has_permission",
 # }
 
 # Document Events
@@ -264,4 +264,22 @@ fixtures = [
     {"doctype": "Print Format", "filters": {"module": "haritha_hospital"}},
     {"doctype": "Notification", "filters": {"module": "haritha_hospital"}},
     "Letter Head",
+    # Added 2026-10-01 (Phase D) to make today's changes replayable via fixtures:
+    # Workspace: Haritha workspaces live in modules HR/Core with app=hrms/frappe (NOT haritha_hospital),
+    # so we filter by exact name to capture only the 6 Haritha workspaces.
+    {
+        "doctype": "Workspace",
+        "filters": {"name": ["in", [
+            "Haritha: Employee",
+            "Haritha: HR Manager",
+            "Haritha: HR User",
+            "Haritha: Leave Approver",
+            "Haritha: Roster Manager",
+            "Haritha: System Manager",
+        ]]},
+    },
+    # Custom DocPerm: capture Page + Report permissions (today's change was Page DocPerm Desk User read=1).
+    {"doctype": "Custom DocPerm", "filters": {"parent": ["in", ["Page", "Report"]]}},
+    # Report: capture HR module reports (today's 5 Report.roles fixes were Leave Ledger, Monthly Attendance Sheet, etc.).
+    {"doctype": "Report", "filters": {"module": "HR"}},
 ]
