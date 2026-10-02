@@ -278,8 +278,11 @@ fixtures = [
             "Haritha: System Manager",
         ]]},
     },
-    # Custom DocPerm: capture Page + Report permissions (today's change was Page DocPerm Desk User read=1).
-    {"doctype": "Custom DocPerm", "filters": {"parent": ["in", ["Page", "Report"]]}},
+    # Custom DocPerm: capture Page + Report + Shift Assignment permissions.
+    # 2026-10-02: added Shift Assignment for #7 — Custom DocPerm rows added 2026-09-30
+    # for Roster Manager/HR Manager/System Manager/Employee/Leave Approver on Shift Assignment
+    # would be lost on reinstall/migrate without this filter entry.
+    {"doctype": "Custom DocPerm", "filters": {"parent": ["in", ["Page", "Report", "Shift Assignment"]]}},
     # Report: capture HR module reports (today's 5 Report.roles fixes were Leave Ledger, Monthly Attendance Sheet, etc.).
     {"doctype": "Report", "filters": {"module": "HR"}},
 ]
