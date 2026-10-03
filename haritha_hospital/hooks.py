@@ -285,4 +285,11 @@ fixtures = [
     {"doctype": "Custom DocPerm", "filters": {"parent": ["in", ["Branch", "Overtime Type", "Page", "Report", "Shift Assignment"]]}},
     # Report: capture HR module reports (today's 5 Report.roles fixes were Leave Ledger, Monthly Attendance Sheet, etc.).
     {"doctype": "Report", "filters": {"module": "HR"}},
+    # 2026-10-03 (#6): capture today's bulk Leave Policy + Assignment + Allocation setup.
+    # Only Haritha-named policies (Clinical / Non-Clinical / Probation); skip pre-existing
+    # HR-LPOL-2026-00001 "Test Leave Policy". LPA + LA filtered by leave_policy name
+    # (Link field stores doc name, not title), and only the 3 Haritha policy IDs.
+    {"doctype": "Leave Policy", "filters": {"title": ["like", "Haritha:%"]}},
+    {"doctype": "Leave Policy Assignment", "filters": {"leave_policy": ["in", ["HR-LPOL-2026-00002", "HR-LPOL-2026-00003", "HR-LPOL-2026-00004"]]}},
+    {"doctype": "Leave Allocation", "filters": {"leave_policy": ["in", ["HR-LPOL-2026-00002", "HR-LPOL-2026-00003", "HR-LPOL-2026-00004"]]}},
 ]

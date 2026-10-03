@@ -1,0 +1,116 @@
+[
+ {
+  "amended_from": null,
+  "docstatus": 0,
+  "doctype": "Leave Policy",
+  "leave_policy_details": [
+   {
+    "annual_allocation": 12.0,
+    "leave_type": "Casual Leave"
+   },
+   {
+    "annual_allocation": 20.0,
+    "leave_type": "Earned Leave"
+   },
+   {
+    "annual_allocation": 12.0,
+    "leave_type": "Sick Leave"
+   },
+   {
+    "annual_allocation": 5.0,
+    "leave_type": "Compensatory Leave"
+   },
+   {
+    "annual_allocation": 5.0,
+    "leave_type": "Paternity Leave"
+   },
+   {
+    "annual_allocation": 180.0,
+    "leave_type": "Maternity Leave"
+   },
+   {
+    "annual_allocation": 0.0,
+    "leave_type": "Leave Without Pay"
+   }
+  ],
+  "modified": "2026-10-03 10:09:55.273903",
+  "name": "HR-LPOL-2026-00002",
+  "title": "Haritha: Clinical"
+ },
+ {
+  "amended_from": null,
+  "docstatus": 0,
+  "doctype": "Leave Policy",
+  "leave_policy_details": [
+   {
+    "annual_allocation": 12.0,
+    "leave_type": "Casual Leave"
+   },
+   {
+    "annual_allocation": 15.0,
+    "leave_type": "Earned Leave"
+   },
+   {
+    "annual_allocation": 6.0,
+    "leave_type": "Sick Leave"
+   },
+   {
+    "annual_allocation": 5.0,
+    "leave_type": "Compensatory Leave"
+   },
+   {
+    "annual_allocation": 5.0,
+    "leave_type": "Paternity Leave"
+   },
+   {
+    "annual_allocation": 180.0,
+    "leave_type": "Maternity Leave"
+   },
+   {
+    "annual_allocation": 0.0,
+    "leave_type": "Leave Without Pay"
+   }
+  ],
+  "modified": "2026-10-03 10:09:55.491609",
+  "name": "HR-LPOL-2026-00003",
+  "title": "Haritha: Non-Clinical"
+ },
+ {
+  "amended_from": null,
+  "docstatus": 0,
+  "doctype": "Leave Policy",
+  "leave_policy_details": [
+   {
+    "annual_allocation": 6.0,
+    "leave_type": "Casual Leave"
+   },
+   {
+    "annual_allocation": 0.0,
+    "leave_type": "Earned Leave"
+   },
+   {
+    "annual_allocation": 6.0,
+    "leave_type": "Sick Leave"
+   },
+   {
+    "annual_allocation": 0.0,
+    "leave_type": "Compensatory Leave"
+   },
+   {
+    "annual_allocation": 0.0,
+    "leave_type": "Paternity Leave"
+   },
+   {
+    "annual_allocation": 0.0,
+    "leave_type": "Maternity Leave"
+   },
+   {
+    "annual_allocation": 0.0,
+    "leave_type": "Leave Without Pay"
+   }
+  ],
+  "modified": "2026-10-03 10:09:55.504301",
+  "name": "HR-LPOL-2026-00004",
+  "title": "Haritha: Probation"
+ }
+]
